@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f06424</color>
+    <color name="colorPrimaryDark">#c23400</color>
+    <color name="colorAccent">#ff9100</color>
+
+    <color name="swipeRefreshColor1">#f06424</color>
+    <color name="swipeRefreshColor2">#FF9100</color>
+
+    <color name="colorgray">#666666</color>
+</resources>

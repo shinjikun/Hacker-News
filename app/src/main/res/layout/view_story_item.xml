@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/story.cardstyle"
+
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/story.points.dimen"
+            android:layout_height="@dimen/story.points.dimen"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/spacing"
+            android:layout_marginEnd="@dimen/spacing"
+            android:layout_marginTop="@dimen/spacing"
+            android:id="@+id/txtStoryPoints"
+            style="@style/points"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/spacing"
+            android:layout_toLeftOf="@+id/txtStoryPoints"
+            android:layout_toStartOf="@+id/txtStoryPoints"
+            android:id="@+id/txtStoryTitle"
+            android:maxLines="2"
+            style="@style/medTextStyle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStoryTitle"
+            android:layout_alignLeft="@+id/txtStoryTitle"
+            android:layout_alignStart="@+id/txtStoryTitle"
+            android:layout_toLeftOf="@+id/txtStoryPoints"
+            android:layout_toStartOf="@+id/txtStoryPoints"
+            android:layout_marginBottom="@dimen/card_spacing_b"
+            android:id="@+id/txtStoryAuthor"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStoryAuthor"
+            android:layout_alignLeft="@+id/txtStoryAuthor"
+            android:layout_alignStart="@+id/txtStoryAuthor"
+            android:id="@+id/txtStoryComments"
+            android:layout_marginRight="@dimen/spacing"
+            android:layout_marginEnd="@dimen/spacing"
+            android:layout_marginBottom="@dimen/card_spacing_b"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtStoryComments"
+            android:layout_toEndOf="@+id/txtStoryComments"
+            android:layout_below="@+id/txtStoryAuthor"
+            android:id="@+id/txtStoryTime" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launch_dp"
+            android:drawableStart="@drawable/ic_launch_dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/txtStoryAuthor"
+            android:layout_alignRight="@+id/txtStoryPoints"
+            android:layout_alignEnd="@+id/txtStoryPoints"
+            android:id="@+id/btnlaunch"
+            android:text="@string/btnlabel"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
